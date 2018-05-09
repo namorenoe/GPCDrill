@@ -49,6 +49,7 @@ export default class Registration extends Component {
         });
 
         console.log(maxValue);
+        maxValue+=1;
 
         // scaleBand type
         const xScale = this.xScale
