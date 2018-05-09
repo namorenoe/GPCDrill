@@ -43,6 +43,7 @@ export default class Registration extends Component {
                                 <option>W</option>
                                 <option>FRANCO</option>
                                 <option>CP</option>
+                                <option>SD</option>
                             </select>
                         </div>
                         {

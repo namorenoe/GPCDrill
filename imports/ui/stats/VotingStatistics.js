@@ -33,6 +33,10 @@ export default class Registration extends Component {
             {
                 puesto:"CP",
                 cuenta:0
+            },
+            {
+                puesto:"SD",
+                cuenta:0
             }
         ];
         rawData.forEach((rd)=>{
