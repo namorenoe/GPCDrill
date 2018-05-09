@@ -85,8 +85,8 @@ class App extends Component {
 
     render() {
         return (
-            <div className="container-fluid main-content center-items">
-                <div className="row justify-content-around">
+            <div className="container-fluid main-content">
+                <div className="row justify-content-around center-items">
                     <Registration
                         handleIdChange={this.handleIdChange}
                         handleVotingPlace={this.handleVotingSite}
@@ -98,6 +98,14 @@ class App extends Component {
                     <div className="col-6">
                         <h1>Estadísticas</h1>
                         <VotingStatistics data={this.props.voters}/>
+                    </div>
+                </div>
+                <div className="row justify-content-around">
+                    <div className="col-6 center-items">
+                        <img src="LogoCEU.gif" alt="logo_ceu"/>
+                    </div>
+                    <div className="col-6 center-items">
+                        <img src="LogoGXC.png" alt="logo_gpc"/>
                     </div>
                 </div>
                 <ConfirmationDialog open={this.state.openConfirmDialog} handleUndo={this.handleUndoRegistration}

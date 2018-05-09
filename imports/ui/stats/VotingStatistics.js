@@ -1,29 +1,61 @@
 import React, {Component} from "react";
 import { scaleBand, scaleLinear } from 'd3-scale';
+import Axes from "./Axes.js";
+import Bars from "./Bars.js";
 
 import "./VotingStatistics.css";
 
 export default class Registration extends Component {
-    constructor() {
-        super()
-        this.xScale = scaleBand()
-        this.yScale = scaleLinear()
+    constructor(props) {
+        super(props);
+        this.xScale = scaleBand();
+        this.yScale = scaleLinear();
     }
 
     render() {
         const margins = { top: 50, right: 20, bottom: 100, left: 60 };
-        const svgDimensions = { width: 800, height: 500 };
+        const svgDimensions = { width: 400, height: 400 };
 
-        let data = this.props.data;
+        let rawData = this.props.data;
+        let data = [
+            {
+                puesto:"ML",
+                cuenta:0
+            },
+            {
+                puesto:"W",
+                cuenta:0
+            },
+            {
+                puesto:"FRANCO",
+                cuenta:0
+            },
+            {
+                puesto:"CP",
+                cuenta:0
+            }
+        ];
+        rawData.forEach((rd)=>{
+            data.forEach((pv)=>{
+                if(pv.puesto===rd.votingSite)pv.cuenta++;
+            });
+        });
 
-        const maxValue = Math.max(data.map(d => d.value));
+        console.log(data);
+
+        let maxValue = 0;
+        data.forEach((d)=>{
+            if(d.cuenta>maxValue)maxValue=d.cuenta;
+        });
+
+        console.log(maxValue);
 
         // scaleBand type
         const xScale = this.xScale
             .padding(0.5)
             // scaleBand domain should be an array of specific values
             // in our case, we want to use movie titles
-            .domain(data.map(d => d.title))
+            .domain(data.map(d => d.puesto))
             .range([margins.left, svgDimensions.width - margins.right])
 
         // scaleLinear type
@@ -34,7 +66,18 @@ export default class Registration extends Component {
 
         return (
             <svg width={svgDimensions.width} height={svgDimensions.height}>
-                // Bars and Axis comes here
+                <Axes
+                    scales={{ xScale, yScale }}
+                    margins={margins}
+                    svgDimensions={svgDimensions}
+                />
+                <Bars
+                    scales={{ xScale, yScale }}
+                    margins={margins}
+                    data={data}
+                    maxValue={maxValue}
+                    svgDimensions={svgDimensions}
+                />
             </svg>
         )
     }
