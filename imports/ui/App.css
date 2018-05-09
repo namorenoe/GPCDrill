@@ -1,3 +1,18 @@
 /*-----------
 Main App CSS
  ------------*/
+
+html, body {
+    height: 100%; /*Fixes the height to 100% of the viewport*/
+}
+
+.center-items {
+    text-align: center;
+    margin: auto;
+    position: center;
+
+}
+
+.main-content{
+    height: 100%;
+}

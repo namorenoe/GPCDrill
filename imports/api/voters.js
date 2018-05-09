@@ -19,6 +19,16 @@ Meteor.methods({
             voterID: voterID,
             votingSite: votingSite,
             date: new Date().getTime()
+        },(err)=>{
+            if(err) console.log(err);
+            console.log("INSERT SUCCESS");
+        });
+    },
+    'voters.remove'(voterID){
+        check(voterID,String);
+        Voters.remove({voterID:voterID},(err)=>{
+            if(err) console.log(err);
+            console.log("DELETE SUCCESS");
         });
     }
 });
