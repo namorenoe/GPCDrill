@@ -15,7 +15,7 @@ class App extends Component {
         this.state = {
             id: "",
             registrationError: false,
-            selectionError:false,
+            selectionError: false,
             errorMessage: "",
             votingSite: "",
             openConfirmDialog: false
@@ -36,8 +36,8 @@ class App extends Component {
     }
 
     handleVotingSite(val) {
-        this.setState({votingSite:val});
-        this.setState({selectionError:false})
+        this.setState({votingSite: val});
+        this.setState({selectionError: false})
     }
 
     submitVoter(e) {
@@ -49,9 +49,9 @@ class App extends Component {
                 errorMessage: "El documento debe tener una longitud mayor a 7"
             });
         }
-        else if(this.state.votingSite===""){
+        else if (this.state.votingSite === "") {
             this.setState({
-                selectionError:true
+                selectionError: true
             });
         }
         else {
@@ -74,13 +74,13 @@ class App extends Component {
         }
     }
 
-    handleUndoRegistration(){
+    handleUndoRegistration() {
         Meteor.call('voters.remove', this.state.id);
-        this.setState({openConfirmDialog:false});
+        this.setState({openConfirmDialog: false});
     }
 
-    handleCloseDialog(){
-        this.setState({openConfirmDialog:false});
+    handleCloseDialog() {
+        this.setState({openConfirmDialog: false});
     }
 
     render() {
@@ -95,12 +95,13 @@ class App extends Component {
                         errorMessage={this.state.errorMessage}
                         submitAction={this.submitVoter}
                     />
-                </div>
-                <div className="row justify-content-around">
-                    <VotingStatistics data={this.props.voters}/>
+                    <div className="col-6">
+                        <h1>Estadísticas</h1>
+                        <VotingStatistics data={this.props.voters}/>
+                    </div>
                 </div>
                 <ConfirmationDialog open={this.state.openConfirmDialog} handleUndo={this.handleUndoRegistration}
-                              handleClose={this.handleCloseDialog} voterID={this.state.id}
+                                    handleClose={this.handleCloseDialog} voterID={this.state.id}
                 />
             </div>
         );

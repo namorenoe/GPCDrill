@@ -15,17 +15,17 @@ export default class Registration extends Component {
 
     render() {
         return (
-            <div className="col-md-3 col-sm-6 col-10">
+            <div className="col-md-4 col-sm-5 col-6 register-content">
                 <div className={"card"}>
                     <h2 className="auth-card-title">Registro</h2>
                     <form onSubmit={this.props.submitAction}>
                         <div className={"form-group " +
-                        (this.props.registrationError && $("#emailLogin").is(":focus") ? "has-danger" : "")}>
+                        (this.props.registrationError && !$("#voterID").is(":focus") ? "has-danger" : "")}>
                             <label htmlFor="email">
                                 Codigo/Cédula:</label>
                             <input placeholder="i.e 203012121" type="number" id={"voterID"}
                                    className={"form-control " +
-                                   (this.props.registrationError && $("#voterID").is(":focus") ? "form-control-danger" : "")
+                                   (this.props.registrationError && !$("#voterID").is(":focus") ? "form-control-danger" : "")
                                    }
                                    onChange={this.handleIdChange.bind(this)}
                                    aria-label="Text input for email"
