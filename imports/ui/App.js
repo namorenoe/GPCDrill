@@ -4,6 +4,7 @@ import {withTracker} from "meteor/react-meteor-data";
 import {Voters} from "../api/voters";
 import Registration from "./registration/Registration.js";
 import VotingStatistics from "./stats/VotingStatistics.js";
+import VotingHistogram from "./stats/VotingHistogram.js";
 import ConfirmationDialog from "./registration/ConfirmationDialog.js";
 
 import "./App.css";
@@ -98,6 +99,7 @@ class App extends Component {
                     <div className="col-6">
                         <h1>Estadísticas</h1>
                         <VotingStatistics data={this.props.voters}/>
+                        <VotingHistogram data={this.props.voters}/>
                     </div>
                 </div>
                 <div className="row justify-content-around">
