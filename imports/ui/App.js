@@ -87,7 +87,7 @@ class App extends Component {
     render() {
         return (
             <div className="container-fluid main-content">
-                <div className="row justify-content-around" style="background-image: url(../../public/LogoCEU.gif);">
+                <div className="row justify-content-around">
                     <div className="col-6 center-items">
                         <img src="LogoCEU.gif" alt="logo_ceu"/>
                     </div>
