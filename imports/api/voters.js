@@ -11,13 +11,15 @@ if(Meteor.isServer){
 }
 
 Meteor.methods({
-    'voters.insert'(voterID,votingSite){
+    'voters.insert'(voterID,votingSite,candidate){
         check(voterID,String);
         check(votingSite,String);
+        check(candidate,String);
 
         Voters.insert({
             voterID: voterID,
             votingSite: votingSite,
+            candidate: Candidate,
             date: new Date().getTime()
         },(err)=>{
             if(err) console.log(err);

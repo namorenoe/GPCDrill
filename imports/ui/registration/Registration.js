@@ -13,6 +13,10 @@ export default class Registration extends Component {
         this.props.handleVotingPlace(e.target.value);
     }
 
+    handleCandidate(e){
+        this.props.handleCandidate(e.target.value);
+    }
+
     render() {
         return (
             <div className="col-md-4 col-sm-5 col-6 register-content">
@@ -46,6 +50,17 @@ export default class Registration extends Component {
                                 <option>SD</option>
                             </select>
                         </div>
+                        <div className="form-group">
+                            <label htmlFor="sel1">Seleccione su voto:</label>
+                            <select className="form-control" id="sel1" onChange={this.handleCandidate.bind(this)}>
+                                <option></option>
+                                <option>Claudia Lopez</option>
+                                <option>Miguel Uribe Turbay</option>
+                                <option>Fernando Galan</option>
+                                <option>Hollman Morris</option>
+                                <option>En Blanco</option>
+                            </select>
+                        </div>
                         {
                             this.props.selectionError ?
                                 <small className="form-control-feedback">Debe seleccionar un sitio de votación</small> : null
@@ -72,4 +87,5 @@ Registration.propTypes = {
     errorMessage: PropTypes.string.isRequired,
     handleIdChange: PropTypes.func.isRequired,
     handleVotingPlace: PropTypes.func.isRequired,
+    handleCandidate: PropTypes.func.isRequired,
 };

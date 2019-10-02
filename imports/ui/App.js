@@ -19,11 +19,13 @@ class App extends Component {
             selectionError: false,
             errorMessage: "",
             votingSite: "",
+            candidate: "",
             openConfirmDialog: false
         };
 
         this.handleIdChange = this.handleIdChange.bind(this);
         this.handleVotingSite = this.handleVotingSite.bind(this);
+        this.handleCandidate = this.handleCandidate.bind(this);
         this.submitVoter = this.submitVoter.bind(this);
         this.handleUndoRegistration = this.handleUndoRegistration.bind(this);
         this.handleCloseDialog = this.handleCloseDialog.bind(this);
@@ -38,6 +40,11 @@ class App extends Component {
 
     handleVotingSite(val) {
         this.setState({votingSite: val});
+        this.setState({selectionError: false})
+    }
+
+    handleCandidate(val) {
+        this.setState({candidate: val});
         this.setState({selectionError: false})
     }
 
@@ -99,6 +106,7 @@ class App extends Component {
                     <Registration
                         handleIdChange={this.handleIdChange}
                         handleVotingPlace={this.handleVotingSite}
+                        handleCandidate={this.handleCandidate}
                         registrationError={this.state.registrationError}
                         selectionError={this.state.selectionError}
                         errorMessage={this.state.errorMessage}
