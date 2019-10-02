@@ -10,7 +10,7 @@ import ConfirmationDialog from "./registration/ConfirmationDialog.js";
 import "./App.css";
 
 const heading = {
-    backgroundColor: RGB(240,240,240),
+    //backgroundColor: rgb({240,240,240})),
     opacity: 0.2,
 }
 
