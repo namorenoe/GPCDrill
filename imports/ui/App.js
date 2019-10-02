@@ -9,6 +9,10 @@ import ConfirmationDialog from "./registration/ConfirmationDialog.js";
 
 import "./App.css";
 
+const heading = {
+    color: lightblue   
+}
+
 class App extends Component {
 
     constructor(props) {
@@ -96,9 +100,11 @@ class App extends Component {
         this.setState({openConfirmDialog: false});
     }
 
+    
+
     render() {
         return (
-            <div className="container-fluid main-content">
+            <div className="container-fluid main-content" style={heading}>
                 <div className="row justify-content-around">
                     <div className="col-4 center-items">
                         <img src="LogoCEU.gif" alt="logo_ceu"/>
