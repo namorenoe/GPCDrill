@@ -107,14 +107,8 @@ class App extends Component {
         return (
             <div className="container-fluid main-content">
                 <div className="row justify-content-around">
-                    <div className="col-4 center-items">
-                        <img src="LogoCEU.gif" alt="logo_ceu"/>
-                    </div>
-                    <div className="col-4 center-items">
-                        <img src="logofinalCEFI.png" alt="logo_cefi"/>
-                    </div>
-                    <div className="col-4 center-items">
-                        <img src="LogoGXC.png" alt="logo_gpc"/>
+                    <div className="col-12 center-items">
+                        <img src="header.png" alt="logo_ceu"/>
                     </div>
                 </div>
                 <div className="row justify-content-around center-items"  style={heading}>
