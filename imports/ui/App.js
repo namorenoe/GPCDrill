@@ -10,7 +10,7 @@ import ConfirmationDialog from "./registration/ConfirmationDialog.js";
 import "./App.css";
 
 const heading = {
-    color: lightblue   
+    backgroundColor: 'blue',
 }
 
 class App extends Component {
