@@ -10,8 +10,8 @@ import ConfirmationDialog from "./registration/ConfirmationDialog.js";
 import "./App.css";
 
 const heading = {
-    //backgroundColor: rgb({240,240,240})),
-    opacity: 0.2,
+    backgroundColor: rgb('#607d8b'),
+    //opacity: 0.2,
 }
 
 class App extends Component {
