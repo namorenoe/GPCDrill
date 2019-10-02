@@ -19,7 +19,7 @@ Meteor.methods({
         Voters.insert({
             voterID: voterID,
             votingSite: votingSite,
-            candidate: Candidate,
+            candidate: candidate,
             date: new Date().getTime()
         },(err)=>{
             if(err) console.log(err);
