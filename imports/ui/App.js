@@ -62,6 +62,11 @@ class App extends Component {
                 selectionError: true
             });
         }
+        else if (this.state.candidate === "") {
+            this.setState({
+                selectionError: true
+            });
+        }
         else {
             let exists = false;
             this.props.voters.forEach(v => {
@@ -71,7 +76,7 @@ class App extends Component {
                 }
             });
             if (!exists) {
-                Meteor.call('voters.insert', this.state.id, this.state.votingSite);
+                Meteor.call('voters.insert', this.state.id, this.state.votingSite, this.state.candidate);
                 this.setState({openConfirmDialog: true});
             } else {
                 this.setState({

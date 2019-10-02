@@ -50,9 +50,13 @@ export default class Registration extends Component {
                                 <option>SD</option>
                             </select>
                         </div>
+                        {
+                            this.props.selectionError ?
+                                <small className="form-control-feedback">Debe seleccionar un sitio de votación</small> : null
+                        }
                         <div className="form-group">
-                            <label htmlFor="sel1">Seleccione su voto:</label>
-                            <select className="form-control" id="sel1" onChange={this.handleCandidate.bind(this)}>
+                            <label htmlFor="sel2">Seleccione su voto:</label>
+                            <select className="form-control" id="sel2" onChange={this.handleCandidate.bind(this)}>
                                 <option></option>
                                 <option>Claudia Lopez</option>
                                 <option>Miguel Uribe Turbay</option>
@@ -63,7 +67,7 @@ export default class Registration extends Component {
                         </div>
                         {
                             this.props.selectionError ?
-                                <small className="form-control-feedback">Debe seleccionar un sitio de votación</small> : null
+                                <small className="form-control-feedback">Debe seleccionar un candidato</small> : null
                         }
                         <div className="form-group center-items">
                             <button type="submit"
