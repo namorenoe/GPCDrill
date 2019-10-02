@@ -104,7 +104,7 @@ class App extends Component {
                         <img src="LogoCEU.gif" alt="logo_ceu"/>
                     </div>
                     <div className="col-4 center-items">
-                        <img src="logoCEFII.png" alt="logo_cefi"/>
+                        <img src="logofinalCEFI.png" alt="logo_cefi"/>
                     </div>
                     <div className="col-4 center-items">
                         <img src="LogoGXC.png" alt="logo_gpc"/>
