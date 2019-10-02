@@ -87,6 +87,14 @@ class App extends Component {
     render() {
         return (
             <div className="container-fluid main-content">
+                <div className="row justify-content-around">
+                    <div className="col-6 center-items">
+                        <img src="LogoCEU.gif" alt="logo_ceu"/>
+                    </div>
+                    <div className="col-6 center-items">
+                        <img src="LogoGXC.png" alt="logo_gpc"/>
+                    </div>
+                </div>
                 <div className="row justify-content-around center-items">
                     <Registration
                         handleIdChange={this.handleIdChange}
@@ -102,14 +110,7 @@ class App extends Component {
                         <VotingHistogram data={this.props.voters}/>
                     </div>
                 </div>
-                <div className="row justify-content-around">
-                    <div className="col-6 center-items">
-                        <img src="LogoCEU.gif" alt="logo_ceu"/>
-                    </div>
-                    <div className="col-6 center-items">
-                        <img src="LogoGXC.png" alt="logo_gpc"/>
-                    </div>
-                </div>
+                
                 <ConfirmationDialog open={this.state.openConfirmDialog} handleUndo={this.handleUndoRegistration}
                                     handleClose={this.handleCloseDialog} voterID={this.state.id}
                 />
