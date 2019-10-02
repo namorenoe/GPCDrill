@@ -10,7 +10,8 @@ import ConfirmationDialog from "./registration/ConfirmationDialog.js";
 import "./App.css";
 
 const heading = {
-    backgroundColor: 'blue',
+    backgroundColor: RGB(240,240,240),
+    opacity: 0.2,
 }
 
 class App extends Component {
@@ -104,7 +105,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="container-fluid main-content" style={heading}>
+            <div className="container-fluid main-content">
                 <div className="row justify-content-around">
                     <div className="col-4 center-items">
                         <img src="LogoCEU.gif" alt="logo_ceu"/>
@@ -116,7 +117,7 @@ class App extends Component {
                         <img src="LogoGXC.png" alt="logo_gpc"/>
                     </div>
                 </div>
-                <div className="row justify-content-around center-items">
+                <div className="row justify-content-around center-items"  style={heading}>
                     <Registration
                         handleIdChange={this.handleIdChange}
                         handleVotingPlace={this.handleVotingSite}
