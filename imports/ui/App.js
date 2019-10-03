@@ -15,6 +15,11 @@ const heading = {
     width: '1200px',
     height: '400px',
 }
+const esta = {
+    //backgroundColor: rgb('#607d8b'),
+    //opacity: 0.2,
+    marginTop: "8%",
+}
 
 class App extends Component {
 
@@ -124,9 +129,10 @@ class App extends Component {
                         submitAction={this.submitVoter}
                     />
                 </div>
-                <div className="row justify-content-around center-items">
-                        <h1>Estadísticas</h1>
+                <div className="row justify-content-around" style={esta}>
+                        
                         <div className="col-6 center-items">
+                            <h1>Estadísticas</h1>
                             <VotingStatistics data={this.props.voters}/>
                         </div>
                         <div className="col-6 center-items">
