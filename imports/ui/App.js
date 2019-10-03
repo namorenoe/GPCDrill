@@ -124,7 +124,7 @@ class App extends Component {
                         submitAction={this.submitVoter}
                     />
                 </div>
-                <div className="col-12">
+                <div className="row justify-content-around center-items">
                         <h1>Estadísticas</h1>
                         <div className="col-6 center-items">
                             <VotingStatistics data={this.props.voters}/>
