@@ -12,6 +12,8 @@ import "./App.css";
 const heading = {
     //backgroundColor: rgb('#607d8b'),
     //opacity: 0.2,
+    width: '1000px',
+    height: '250px',
 }
 
 class App extends Component {
@@ -108,10 +110,10 @@ class App extends Component {
             <div className="container-fluid main-content">
                 <div className="row justify-content-around">
                     <div className="col-12 center-items">
-                        <img src="header.png" alt="logo_ceu"/>
+                        <img src="header.png" alt="logo_ceu" style={heading}/>
                     </div>
                 </div>
-                <div className="row justify-content-around center-items"  style={heading}>
+                <div className="row justify-content-around center-items" >
                     <Registration
                         handleIdChange={this.handleIdChange}
                         handleVotingPlace={this.handleVotingSite}
