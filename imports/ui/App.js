@@ -13,7 +13,7 @@ const heading = {
     //backgroundColor: rgb('#607d8b'),
     //opacity: 0.2,
     width: '1200px',
-    height: '270px',
+    height: '400px',
 }
 
 class App extends Component {
