@@ -3,6 +3,14 @@ import PropTypes from "prop-types";
 
 import "./Registration.css";
 
+
+const margins = {
+    //backgroundColor: rgb('#607d8b'),
+    //opacity: 0.2,
+    marginRight: "3%",
+    marginLeft: "3%",
+}
+
 export default class Registration extends Component {
 
     handleIdChange(e) {
@@ -27,7 +35,7 @@ export default class Registration extends Component {
                         (this.props.registrationError && !$("#voterID").is(":focus") ? "has-danger" : "")}>
                             <label htmlFor="email">
                                 Codigo/Cédula:</label>
-                            <input placeholder="i.e 203012121" type="number" id={"voterID"}
+                            <input placeholder="i.e 203012121" type="number" id={"voterID"} style={margins}
                                    className={"form-control " +
                                    (this.props.registrationError && !$("#voterID").is(":focus") ? "form-control-danger" : "")
                                    }
@@ -41,7 +49,7 @@ export default class Registration extends Component {
                         </div>
                         <div className="form-group">
                             <label htmlFor="sel1">Seleccione puesto de votación:</label>
-                            <select className="form-control" id="sel1" onChange={this.handleVotingPlace.bind(this)}>
+                            <select className="form-control" id="sel1" style={margins} onChange={this.handleVotingPlace.bind(this)}>
                                 <option></option>
                                 <option>Universidad de los Andes</option>
                                 <option>Universidad Javeriana</option>
@@ -56,7 +64,7 @@ export default class Registration extends Component {
                         }
                         <div className="form-group">
                             <label htmlFor="sel2">Seleccione su voto:</label>
-                            <select className="form-control" id="sel2" onChange={this.handleCandidate.bind(this)}>
+                            <select className="form-control" id="sel2" style={margins} onChange={this.handleCandidate.bind(this)}>
                                 <option></option>
                                 <option>Claudia Lopez</option>
                                 <option>Miguel Uribe Turbay</option>
