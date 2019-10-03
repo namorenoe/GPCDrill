@@ -12,7 +12,7 @@ import "./App.css";
 const heading = {
     //backgroundColor: rgb('#607d8b'),
     //opacity: 0.2,
-    width: '1000px',
+    width: '1100px',
     height: '250px',
 }
 

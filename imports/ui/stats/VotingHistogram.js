@@ -12,7 +12,7 @@ export default class Stats extends Component {
                 let hour = (new Date(d.date)).getHours();
                 if (displayData["" + hour]) {
                     displayData["" + hour].TOTAL += 1
-                    if (d.votingSite == "ML") displayData["" + hour].ML += 1
+                    if (d.votingSite == "ML - Universidad de los Andes") displayData["" + hour].ML += 1
                     else if (d.votingSite == "W") displayData["" + hour].W += 1
                     else if (d.votingSite == "FRANCO") displayData["" + hour].FRANCO += 1
                     else if (d.votingSite == "CP") displayData["" + hour].CP += 1
@@ -21,7 +21,7 @@ export default class Stats extends Component {
                     displayData["" + hour] = {
                         HORA: hour,
                         TOTAL: 1,
-                        ML: d.votingSite == "ML" ? 1 : 0,
+                        ML: d.votingSite == "ML - Universidad de los Andes" ? 1 : 0,
                         W: d.votingSite == "W" ? 1 : 0,
                         FRANCO: d.votingSite == "FRANCO" ? 1 : 0,
                         CP: d.votingSite == "CP" ? 1 : 0,
