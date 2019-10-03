@@ -43,8 +43,8 @@ export default class Registration extends Component {
                             <label htmlFor="sel1">Seleccione puesto de votación:</label>
                             <select className="form-control" id="sel1" onChange={this.handleVotingPlace.bind(this)}>
                                 <option></option>
-                                <option>ML - Universidad de los Andes</option>
-                                <option>W - Universidad de los Andes</option>
+                                <option>Universidad de los Andes</option>
+                                <option>Universidad Javeriana</option>
                                 <option>FRANCO - Universidad de los Andes</option>
                                 <option>CP - Universidad de los Andes</option>
                                 <option>Pontificia Universidad Javeriana</option>
