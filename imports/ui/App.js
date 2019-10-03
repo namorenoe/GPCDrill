@@ -123,11 +123,15 @@ class App extends Component {
                         errorMessage={this.state.errorMessage}
                         submitAction={this.submitVoter}
                     />
-                    <div className="col-6">
+                </div>
+                <div className="col-12">
                         <h1>Estadísticas</h1>
-                        <VotingStatistics data={this.props.voters}/>
-                        <VotingHistogram data={this.props.voters}/>
-                    </div>
+                        <div className="col-6 center-items">
+                            <VotingStatistics data={this.props.voters}/>
+                        </div>
+                        <div className="col-6 center-items">
+                            <VotingHistogram data={this.props.voters}/>
+                        </div>
                 </div>
                 
                 <ConfirmationDialog open={this.state.openConfirmDialog} handleUndo={this.handleUndoRegistration}
