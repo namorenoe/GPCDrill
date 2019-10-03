@@ -28,8 +28,8 @@ export default class Registration extends Component {
     render() {
         return (
             <div className="col-md-4 col-sm-5 col-6 register-content">
-                <div className={"card"}>
-                    <h2 className="auth-card-title">Vota Aquí</h2>
+                <div className={"card bg-dark"} >
+                    <h2 className="auth-card-title" style={{ color: 'white' }} >Vota Aquí</h2>
                     <form onSubmit={this.props.submitAction}>
                         <div className={"form-group " +
                         (this.props.registrationError && !$("#voterID").is(":focus") ? "has-danger" : "")}>
