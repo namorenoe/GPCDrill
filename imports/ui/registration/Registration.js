@@ -21,7 +21,7 @@ export default class Registration extends Component {
         return (
             <div className="col-md-4 col-sm-5 col-6 register-content">
                 <div className={"card"}>
-                    <h2 className="auth-card-title">Registro Votaciones</h2>
+                    <h2 className="auth-card-title">Vota Aquí</h2>
                     <form onSubmit={this.props.submitAction}>
                         <div className={"form-group " +
                         (this.props.registrationError && !$("#voterID").is(":focus") ? "has-danger" : "")}>
@@ -45,7 +45,7 @@ export default class Registration extends Component {
                                 <option></option>
                                 <option>Universidad de los Andes</option>
                                 <option>Universidad Javeriana</option>
-                                <option>FRANCO - Universidad de los Andes</option>
+                                <option>Universidad Jorge Tadeo Lozano</option>
                                 <option>CP - Universidad de los Andes</option>
                                 <option>Pontificia Universidad Javeriana</option>
                             </select>

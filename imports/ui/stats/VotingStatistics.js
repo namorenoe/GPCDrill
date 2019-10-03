@@ -27,7 +27,7 @@ export default class Registration extends Component {
                 cuenta: 0
             },
             {
-                puesto: "FRANCO",
+                puesto: "Universidad Jorge Tadeo Lozano",
                 cuenta: 0
             },
             {
