@@ -19,7 +19,7 @@ export default class Registration extends Component {
         let rawData = this.props.data;
         let data = [
             {
-                puesto: "ML",
+                puesto: "ML - Universidad de los Andes",
                 cuenta: 0
             },
             {
