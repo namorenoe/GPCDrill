@@ -38,7 +38,7 @@ export default class Registration extends Component {
 
     render() {
         return (
-            <div className="col-md-3 col-sm-4 col-8 register-content">
+            <div className="col-md-3 col-sm-4 col-6 register-content">
                 <div className={"card"} >
                     <h2 className="card-header">Vota Aquí</h2>
                     <form onSubmit={this.props.submitAction}>
