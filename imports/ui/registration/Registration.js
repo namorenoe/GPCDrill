@@ -28,12 +28,12 @@ export default class Registration extends Component {
     render() {
         return (
             <div className="col-md-4 col-sm-5 col-6 register-content">
-                <div className={"card bg-dark"} >
-                    <h2 className="card-header" style={{ color: 'white' }} >Vota Aquí</h2>
+                <div className={"card"} >
+                    <h2 className="card-header">Vota Aquí</h2>
                     <form onSubmit={this.props.submitAction}>
                         <div className={"form-group " +
                         (this.props.registrationError && !$("#voterID").is(":focus") ? "has-danger" : "")}>
-                            <label htmlFor="email" style={{ color: 'white' }}>
+                            <label htmlFor="email">
                                 Codigo/Cédula:</label>
                             <input placeholder="i.e 203012121" type="number" id={"voterID"}
                                    className={"form-control " +
@@ -48,7 +48,7 @@ export default class Registration extends Component {
                             }
                         </div>
                         <div className="form-group">
-                            <label htmlFor="sel1" style={{ color: 'white' }}>Seleccione puesto de votación:</label>
+                            <label htmlFor="sel1">Seleccione puesto de votación:</label>
                             <select className="form-control" id="sel1" onChange={this.handleVotingPlace.bind(this)}>
                                 <option></option>
                                 <option>Universidad de los Andes</option>
@@ -63,7 +63,7 @@ export default class Registration extends Component {
                                 <small className="form-control-feedback">Debe seleccionar un sitio de votación</small> : null
                         }
                         <div className="form-group">
-                            <label htmlFor="sel2" style={{ color: 'white' }}>Seleccione su voto:</label>
+                            <label htmlFor="sel2">Seleccione su voto:</label>
                             <select className="form-control" id="sel2" onChange={this.handleCandidate.bind(this)}>
                                 <option></option>
                                 <option>Claudia Lopez</option>
