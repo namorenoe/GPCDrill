@@ -10,6 +10,11 @@ const margins = {
     marginRight: "3%",
     marginLeft: "3%",
 }
+const marginstop = {
+    //backgroundColor: rgb('#607d8b'),
+    //opacity: 0.2,
+    marginTop: "20px",
+}
 
 export default class Registration extends Component {
 
@@ -33,7 +38,7 @@ export default class Registration extends Component {
                     <form onSubmit={this.props.submitAction}>
                         <div className={"form-group " +
                         (this.props.registrationError && !$("#voterID").is(":focus") ? "has-danger" : "")}>
-                            <label htmlFor="email">
+                            <label htmlFor="email" style={marginstop}>
                                 Codigo/Cédula:</label>
                             <input placeholder="i.e 203012121" type="number" id={"voterID"}
                                    className={"form-control " +
