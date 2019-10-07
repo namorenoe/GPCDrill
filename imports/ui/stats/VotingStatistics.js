@@ -31,13 +31,46 @@ export default class Registration extends Component {
                 cuenta: 0
             },
             {
-                puesto: "CP",
+                puesto: "Universidad Pedagógica Nacional",
                 cuenta: 0
             },
             {
-                puesto: "SD",
+                puesto: "Universidad del Rosario",
+                cuenta: 0
+            },
+            {
+                puesto: "Universidad Antonio Nariño",
+                cuenta: 0
+            },
+            {
+                puesto: "Universidad EAN",
+                cuenta: 0
+            },
+            {
+                puesto: "Universidad Externado",
+                cuenta: 0
+            },
+            {
+                puesto: "Universidad Nacional",
+                cuenta: 0
+            },
+            {
+                puesto: "Politécnico Grancolombiano",
+                cuenta: 0
+            },
+            {
+                puesto: "Universidad de la Salle",
+                cuenta: 0
+            },
+            {
+                puesto: "Universidad de La Sabana",
+                cuenta: 0
+            },
+            {
+                puesto: "Konrad Lorenz",
                 cuenta: 0
             }
+            
         ];
         rawData.forEach((rd) => {
             data.forEach((pv) => {
