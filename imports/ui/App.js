@@ -116,7 +116,7 @@ class App extends Component {
             <div className="container-fluid main-content">
                 <div className="row justify-content-around">
                     <div className="col-12 center-items">
-                        <img src="bannerCEFI.png" alt="logo_ceu" style={heading}/>
+                        <img src="bannern.png" alt="logo_ceu" style={heading}/>
                     </div>
                 </div>
                 <div className="row justify-content-around center-items" >
