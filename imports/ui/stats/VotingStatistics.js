@@ -67,7 +67,11 @@ export default class Registration extends Component {
                 cuenta: 0
             },
             {
-                puesto: "Konrad Lorenz",
+                puesto: "ESAP",
+                cuenta: 0
+            },
+            {
+                puesto: "Universidad Militar Nueva Granada",
                 cuenta: 0
             }
             
