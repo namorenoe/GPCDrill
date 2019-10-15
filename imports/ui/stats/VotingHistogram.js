@@ -25,7 +25,9 @@ export default class Stats extends Component {
                     else if (d.votingSite == "Politécnico Grancolombiano") displayData["" + hour].POLI += 1
                     else if (d.votingSite == "Universidad de la Salle") displayData["" + hour].SALLE += 1
                     else if (d.votingSite == "Universidad de La Sabana") displayData["" + hour].SABANA += 1
-                    else if (d.votingSite == "Konrad Lorenz") displayData["" + hour].KL += 1
+                    else if (d.votingSite == "ESAP") displayData["" + hour].ESAP += 1
+                    else if (d.votingSite == "Universidad Militar Nueva Granada") displayData["" + hour].MILITAR += 1
+                    
                 } else {
                     displayData["" + hour] = {
                         HORA: hour,
@@ -43,7 +45,8 @@ export default class Stats extends Component {
                         POLI: d.votingSite == "Politécnico Grancolombiano" ? 1 : 0,
                         SALLE: d.votingSite == "Universidad de la Salle" ? 1 : 0,
                         SABANA: d.votingSite == "Universidad de La Sabana" ? 1 : 0,
-                        KL: d.votingSite == "Konrad Lorenz" ? 1 : 0,
+                        ESAP: d.votingSite == "ESAP" ? 1 : 0,
+                        MILITAR: d.votingSite == "Universidad Militar Nueva Granada" ? 1 : 0,
  
                     };
                 }
@@ -76,7 +79,8 @@ export default class Stats extends Component {
                     <Line type="monotone" dataKey="POLI" stroke="black" activeDot={{r: 8}}/>
                     <Line type="monotone" dataKey="SALLE" stroke="black" activeDot={{r: 8}}/>
                     <Line type="monotone" dataKey="SABANA" stroke="black" activeDot={{r: 8}}/>
-                    <Line type="monotone" dataKey="KL" stroke="black" activeDot={{r: 8}}/>
+                    <Line type="monotone" dataKey="ESAP" stroke="black" activeDot={{r: 8}}/>
+                    <Line type="monotone" dataKey="MILITAR" stroke="black" activeDot={{r: 8}}/>
                 </LineChart>
             </div>
         );

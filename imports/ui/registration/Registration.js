@@ -75,7 +75,8 @@ export default class Registration extends Component {
                                 <option>Politécnico Grancolombiano</option>
                                 <option>Universidad de la Salle</option>
                                 <option>Universidad de La Sabana</option>
-                                <option>Konrad Lorenz</option>
+                                <option>ESAP</option>
+                                <option>Universidad Militar Nueva Granada</option>
                             </select>
                         </div>
                         {
