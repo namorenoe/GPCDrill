@@ -10,6 +10,7 @@ if(Meteor.isServer){
     });
 }
 
+
 Meteor.methods({
     'voters.insert'(voterID,votingSite,candidate){
         check(voterID,String);
