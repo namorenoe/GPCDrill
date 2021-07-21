@@ -2,6 +2,15 @@ import {Meteor} from "meteor/meteor";
 import {Mongo} from "meteor/mongo";
 import {check} from "meteor/check";
 
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://namorenoe:nicolas@1@cluster0.0tkz0.mongodb.net/votaciones?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
 export const Voters = new Mongo.Collection("voters");
 
 if(Meteor.isServer){
