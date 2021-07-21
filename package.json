@@ -24,6 +24,7 @@
     "kerberos": "1.1.6",
     "snappy": "6.3.5",
     "aws4": "1.11.0",
-    "mongodb-client-encryption": "1.2.6"
+    "mongodb-client-encryption": "1.2.6",
+    "abernix:standard-minifier-js": "1.2.2"
   }
 }
