@@ -6,8 +6,9 @@ const { MongoClient } = require('mongodb');
 const uri = "mongodb+srv://namorenoe:nicolas@1@cluster0.0tkz0.mongodb.net/votaciones?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
-  const collection = client.db("test").collection("devices");
+  const collection = client.db("votaciones").collection("voters");
   // perform actions on the collection object
+  console.log(collection);
   client.close();
 });
 
