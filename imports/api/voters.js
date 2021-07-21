@@ -2,7 +2,7 @@ import {Meteor} from "meteor/meteor";
 import {Mongo} from "meteor/mongo";
 import {check} from "meteor/check";
 
-const { MongoClient } = require('mongodb');
+/*const { MongoClient } = require('mongodb');
 const uri = "mongodb+srv://namorenoe:nicolas@1@cluster0.0tkz0.mongodb.net/votaciones?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
@@ -10,7 +10,7 @@ client.connect(err => {
   // perform actions on the collection object
   console.log(collection);
   client.close();
-});
+});*/
 
 export const Voters = new Mongo.Collection("voters");
 
