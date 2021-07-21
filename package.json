@@ -19,6 +19,10 @@
     "d3-scale": "^2.0.0",
     "d3-selection": "^1.3.0",
     "recharts": "^1.0.0-beta.10",
-    "mongodb": "^4.0.1"
+    "mongodb": "^4.0.1",
+    "bson-ext": "4.0.0",
+    "kerberos": "1.1.6",
+    "snappy": "6.3.5",
+    "aws4": "1.11.0"
   }
 }
