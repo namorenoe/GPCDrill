@@ -16,7 +16,7 @@ export const Voters = new Mongo.Collection("voters");
 
 if(Meteor.isServer){
     Meteor.publish("voters",()=>{
-        return Voters.find();
+        return Voters.findOne();
     });
 }
 
