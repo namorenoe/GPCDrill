@@ -21,7 +21,8 @@ const esta = {
     marginTop: "8%",
 }
 
-const cedulas = ["1022434817", "1022434818"];
+//cedulas permitidas
+const cedulas = ["1022434817, 1022434818, 1022434819"];
 
 class App extends Component {
 
