@@ -62,21 +62,9 @@ export default class Registration extends Component {
                             <label htmlFor="sel1">Seleccione puesto de votación:</label>
                             <select className="form-control" id="sel1" onChange={this.handleVotingPlace.bind(this)}>
                                 <option></option>
-                                <option>Universidad de los Andes</option>
-                                <option>Universidad Javeriana</option>
-                                <option>Universidad Jorge Tadeo Lozano</option>
-                                <option>Universidad Pedagógica Nacional</option>
-                                <option>Universidad Santo Tomás</option>
-                                <option>Universidad del Rosario</option>
-                                <option>Universidad Antonio Nariño</option>
-                                <option>Universidad EAN</option>
-                                <option>Universidad Externado</option>
-                                <option>Universidad Nacional</option>
-                                <option>Politécnico Grancolombiano</option>
-                                <option>Universidad de la Salle</option>
-                                <option>Universidad de La Sabana</option>
-                                <option>ESAP</option>
-                                <option>Universidad Militar Nueva Granada</option>
+                                <option>Presencial (U.Externado)</option>
+                                <option>Remoto</option>
+                                
                             </select>
                         </div>
                         {
@@ -87,11 +75,8 @@ export default class Registration extends Component {
                             <label htmlFor="sel2">Seleccione su voto:</label>
                             <select className="form-control" id="sel2" onChange={this.handleCandidate.bind(this)}>
                                 <option></option>
-                                <option>HOLLMAN FELIPE MORRIS RINCON</option>
-                                <option>CLAUDIA NAYIBE LOPEZ HERNANDEZ </option>
-                                <option>CARLOS FERNANDO GALAN PACHON</option>
-                                <option>MIGUEL URIBE TURBAY</option>
-                                <option>VOTO EN BLANCO</option>
+                                <option>Candidato 1</option>
+                                <option>Candidato 2</option>
                             </select>
                         </div>
                         {

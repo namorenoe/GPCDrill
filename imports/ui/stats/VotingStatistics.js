@@ -19,62 +19,14 @@ export default class Registration extends Component {
         let rawData = this.props.data;
         let data = [
             {
-                puesto: "Universidad de los Andes",
+                puesto: "Presencial (U.Externado)",
                 cuenta: 0
             },
             {
-                puesto: "Universidad Javeriana",
+                puesto: "Remoto",
                 cuenta: 0
             },
-            {
-                puesto: "Universidad Jorge Tadeo Lozano",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad Pedagógica Nacional",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad del Rosario",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad Antonio Nariño",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad EAN",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad Externado",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad Nacional",
-                cuenta: 0
-            },
-            {
-                puesto: "Politécnico Grancolombiano",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad de la Salle",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad de La Sabana",
-                cuenta: 0
-            },
-            {
-                puesto: "ESAP",
-                cuenta: 0
-            },
-            {
-                puesto: "Universidad Militar Nueva Granada",
-                cuenta: 0
-            }
-            
+
         ];
         rawData.forEach((rd) => {
             data.forEach((pv) => {
