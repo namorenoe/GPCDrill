@@ -21,6 +21,7 @@ const esta = {
     marginTop: "8%",
 }
 
+const cedulas = ["1022434817", "1022434818"];
 
 class App extends Component {
 
@@ -78,6 +79,12 @@ class App extends Component {
         else if (this.state.candidate === "") {
             this.setState({
                 selectionError: true
+            });
+        }
+        else if (!cedulas.includes(this.state.id)){
+            this.setState({
+                registrationError: true,
+                errorMessage: "El documento no esta habilitado para votar, comuniquese con el administrador"
             });
         }
         else {
