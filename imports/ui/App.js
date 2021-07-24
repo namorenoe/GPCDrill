@@ -22,7 +22,8 @@ const esta = {
 }
 
 //cedulas permitidas
-const cedulas = ["1022434817, 1022434818, 1022434819"];
+const cedulasString = "1022434817, 1022434818, 1022434819";
+const cedulas = cedulasString.split(',');
 
 class App extends Component {
 
