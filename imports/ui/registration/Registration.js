@@ -41,7 +41,7 @@ export default class Registration extends Component {
             <div className="col-md-5 col-sm-6 col-6 register-content">
                 <div className={"card"} >
                     <h2 className="card-header">Vota Aquí</h2>
-                    <h4 className="card-header">¿Esta de acuerdo con la postulación a presidencia, lista y tesoreria?</h4>
+                    <h4 className="card-header">¿Está de acuerdo con la postulación de la lista, copresidencias y tesorerías para conformar el nuevo Comité Ejecutivo Nacional de ACREES?</h4>
                     <form onSubmit={this.props.submitAction}>
                         <div className={"form-group " +
                         (this.props.registrationError && !$("#voterID").is(":focus") ? "has-danger" : "")}>
