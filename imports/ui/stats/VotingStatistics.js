@@ -12,6 +12,7 @@ export default class Registration extends Component {
         this.yScale = scaleLinear();
     }
 
+    
     render() {
         const margins = {top: 50, right: 20, bottom: 100, left: 60};
         const svgDimensions = {width: 400, height: 400};

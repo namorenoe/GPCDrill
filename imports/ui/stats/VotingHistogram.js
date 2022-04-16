@@ -28,7 +28,7 @@ export default class Stats extends Component {
             });
             for(var key in displayData) {
                 data.push(displayData[key]);
-            }
+            } 
         }
         console.log(displayData);
         return (

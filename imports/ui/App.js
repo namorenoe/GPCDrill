@@ -141,9 +141,11 @@ class App extends Component {
                     />
                 </div>
                 <div className="row justify-content-around" style={esta}>
+                <h1>Estadísticas</h1>
+                </div>
+                <div className="row justify-content-around" style={esta}>
                         
                         <div className="col-6 center-items">
-                            <h1>Estadísticas</h1>
                             <VotingStatistics data={this.props.voters}/>
                         </div>
                         <div className="col-6 center-items">
