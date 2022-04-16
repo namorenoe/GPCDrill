@@ -12,7 +12,7 @@ import "./App.css";
 const heading = {
     backgroundColor: '#eb626b',
     //opacity: 0.2,
-    width: '1200px',
+    width: '1000px',
     height: '400px',
 }
 const esta = {
