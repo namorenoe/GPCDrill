@@ -41,7 +41,6 @@ export default class Registration extends Component {
         return (
             <div className="col-md-5 col-sm-6 col-6 register-content">
 
-
                 <div className={"card"} >
                     <h2 className="card-header">Vota Aquí</h2>
                     <h4 className="card-header">¿Está de acuerdo con la postulación de la lista, copresidencias y tesorerías para conformar el nuevo Comité Ejecutivo Nacional de ACREES?</h4>
