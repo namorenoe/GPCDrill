@@ -124,6 +124,15 @@ class App extends Component {
     render() {
         return (
             <div className="container-fluid main-content">
+                <div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">SVD - Sistema de Votación digital</a>
+    
+    <div class="w3-right w3-hide-small">
+      
+    </div>
+  </div>
+</div>
                 <div className="row justify-content-around">
                     <div className="col-12 center-items">
                         <img src="RedKolumbien-Portada-Web.jpg" alt="logo_ceu" style={heading}/>
